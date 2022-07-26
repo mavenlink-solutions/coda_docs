@@ -28,7 +28,8 @@ module CodaDocs
           response_list << parse_response(response)
         end
 
-        response_list.flatten if response_list.present?
+        raise StandardError.new("Could not retrieve entity. Either entity does not exist or you do not have authorization to access the entity.") unless response_list.present?
+        response_list.flatten
       end
     end
   end
