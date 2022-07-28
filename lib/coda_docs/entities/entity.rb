@@ -23,6 +23,8 @@ module CodaDocs
       def paginate_response(response)
         response_list = parse_response(response)
 
+        raise CodaDocs::ResponseError, "Could not retrieve entity. Either entity does not exist or you do not have authorization to access the entity." if response_list.nil?
+
         while parse_response(response, field: 'nextPageLink')
           response = connection.get(parse_response(response, field: 'nextPageLink'))
           response_list << parse_response(response)
