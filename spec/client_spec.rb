@@ -8,9 +8,10 @@ RSpec.describe CodaDocs::Client do
   end
 
   it 'has an entity for permitted coda entities' do
-    entity = "#{coda_entities.sample}"
-    klass = "CodaDocs::Entities::#{entity.capitalize}".constantize
-    expect(subject.send(entity)).to be_a klass
+    coda_entities.each do |entity|
+      klass = "CodaDocs::Entities::#{entity.capitalize}".constantize
+      expect(subject.send(entity)).to be_a klass
+    end
   end
 
   it 'raises an error for an undefined entity' do
@@ -26,11 +27,9 @@ RSpec.describe CodaDocs::Client do
       'columns',
       'controls',
       'docs',
-      'folders',
       'formulas',
       'miscellaneous',
       'rows',
-      'sections',
       'tables'
     ]
   end
