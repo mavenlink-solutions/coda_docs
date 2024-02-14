@@ -5,7 +5,7 @@ class SpecEntitiesCreator
 
   def doc
     document = VCR.use_cassette('docs/create') do
-      CodaDocs::Entities::Docs.new(@access_token).create
+      CodaDocs::Entities::Docs.new(@access_token).create({})
     end
   end
 
