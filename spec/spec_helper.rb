@@ -12,4 +12,7 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  ENV['CODA_DOCS_API_KEY'] ||= 'dummy_api_key'
+  ENV['STATIC_TABLE_ID'] ||= 'grid-7wlFDEirg4'
 end

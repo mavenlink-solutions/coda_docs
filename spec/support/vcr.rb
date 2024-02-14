@@ -1,6 +1,6 @@
 require 'vcr'
 
-DOCS_URL = 'https://coda.io/apis/v1beta1/docs'
+DOCS_URL = 'https://coda.io/apis/v1/docs'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
