@@ -9,7 +9,7 @@ RSpec.describe CodaDocs::Entities::Columns do
 
   before do
     @columns = VCR.use_cassette('columns/all') {
-      subject.all(doc_id: doc_id, table_id: table_id)
+      subject.all(doc_id, table_id)
     }
   end
 
@@ -22,7 +22,7 @@ RSpec.describe CodaDocs::Entities::Columns do
     column_id = @columns.first['id']
 
     res = VCR.use_cassette('columns/find') {
-      subject.find(doc_id: doc_id, table_id: table_id, column_id: column_id)
+      subject.find(doc_id, table_id, column_id)
     }
 
     expect(res['type']).to eq 'column'

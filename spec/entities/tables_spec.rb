@@ -22,7 +22,7 @@ RSpec.describe CodaDocs::Entities::Tables do
 
   it 'finds a table in a document' do
     res = VCR.use_cassette('tables/find') {
-      subject.find(doc_id: doc_id, table_id: table_id)
+      subject.find(doc_id, table_id)
     }
 
     expect(res['name']).not_to be nil

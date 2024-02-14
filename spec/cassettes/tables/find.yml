@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://coda.io/apis/v1beta1/docs/Yuypr0WRkq/tables/grid-7wlFDEirg4
+    uri: https://coda.io/apis/v1/docs/Yuypr0WRkq/tables/grid-7wlFDEirg4
     body:
       encoding: US-ASCII
       string: ''
@@ -37,8 +37,8 @@ http_interactions:
       - max-age=63072000; includeSubDomains; preload
     body:
       encoding: UTF-8
-      string: '{"id":"grid-7wlFDEirg4","type":"table","href":"https://coda.io/apis/v1beta1/docs/Yuypr0WRkq/tables/grid-7wlFDEirg4","browserLink":"https://coda.io/d/_dYuypr0WRkq#_tugrid-7wlFDEirg4","name":"Test
-        Table 1","displayColumn":{"id":"c-BWoZD1pDLj","type":"column","href":"https://coda.io/apis/v1beta1/docs/Yuypr0WRkq/tables/grid-7wlFDEirg4/columns/c-BWoZD1pDLj"},"rowCount":3,"createdAt":"2020-01-09T23:25:06.174Z","updatedAt":"2020-01-09T23:25:32.437Z","sorts":[],"layout":"default"}'
-    http_version: 
+      string: '{"id":"grid-7wlFDEirg4","type":"table","href":"https://coda.io/apis/v1/docs/Yuypr0WRkq/tables/grid-7wlFDEirg4","browserLink":"https://coda.io/d/_dYuypr0WRkq#_tugrid-7wlFDEirg4","name":"Test
+        Table 1","displayColumn":{"id":"c-BWoZD1pDLj","type":"column","href":"https://coda.io/apis/v1/docs/Yuypr0WRkq/tables/grid-7wlFDEirg4/columns/c-BWoZD1pDLj"},"rowCount":3,"createdAt":"2020-01-09T23:25:06.174Z","updatedAt":"2020-01-09T23:25:32.437Z","sorts":[],"layout":"default"}'
+    http_version:
   recorded_at: Fri, 10 Jan 2020 00:02:14 GMT
 recorded_with: VCR 5.0.0
