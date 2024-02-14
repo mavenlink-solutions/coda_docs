@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://coda.io/apis/v1beta1/docs
+    uri: https://coda.io/apis/v1/docs
     body:
       encoding: UTF-8
       string: '{"title":"Untitled","sourceDoc":null,"timezone":"America/Los_Angeles","folderId":null}'
@@ -37,8 +37,8 @@ http_interactions:
       - max-age=63072000; includeSubDomains; preload
     body:
       encoding: UTF-8
-      string: '{"id":"Yuypr0WRkq","type":"doc","href":"https://coda.io/apis/v1beta1/docs/Yuypr0WRkq","browserLink":"https://coda.io/d/_dYuypr0WRkq","name":"Untitled","owner":"ojewaleolaide@gmail.com","ownerName":"ojewale
+      string: '{"id":"Yuypr0WRkq","type":"doc","href":"https://coda.io/apis/v1/docs/Yuypr0WRkq","browserLink":"https://coda.io/d/_dYuypr0WRkq","name":"Untitled","owner":"ojewaleolaide@gmail.com","ownerName":"ojewale
         olaide","createdAt":"2020-01-09T23:23:09.301Z","updatedAt":"2020-01-09T23:23:09.370Z"}'
-    http_version: 
+    http_version:
   recorded_at: Thu, 09 Jan 2020 23:23:09 GMT
 recorded_with: VCR 5.0.0
