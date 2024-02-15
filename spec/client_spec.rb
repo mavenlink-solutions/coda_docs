@@ -24,11 +24,13 @@ RSpec.describe CodaDocs::Client do
   def coda_entities
     [
       'account',
+      'categories',
       'columns',
       'controls',
       'docs',
       'formulas',
       'miscellaneous',
+      'pages',
       'rows',
       'tables'
     ]
