@@ -1,4 +1,4 @@
 {
-"name": "minimal_ubuntu",
-"image": "ruby:3.0.6"
+  "name": "minimal_ubuntu",
+  "image": "ruby:3.0.6"
 }
