@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     coda_docs (1.0.3)
-      activesupport
+      activesupport (~> 6)
       httparty
 
 GEM
