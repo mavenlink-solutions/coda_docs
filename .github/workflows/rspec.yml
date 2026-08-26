@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: test
     container:
-      image: ruby:3.0.6
+      image: ruby:3.4.10
 
     steps:
       - uses: actions/checkout@v3
