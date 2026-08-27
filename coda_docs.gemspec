@@ -35,10 +35,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 2.5', '>= 2.5.23'
-  spec.add_development_dependency 'dotenv', '~> 3.0'
+  spec.add_development_dependency 'dotenv', '~> 2.5'
   spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_dependency 'activesupport', '~> 7.1'
+  spec.add_dependency 'activesupport', '~> 6'
   spec.add_dependency 'httparty'
 end
