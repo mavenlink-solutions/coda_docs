@@ -23,11 +23,12 @@ jobs:
         env:
           RAILS_ENV: test
         run: |
-          bundle install
+          gem install bundler -v 2.5.23
+          bundle _2.5.23_ install
           
       - name: Run tests
         env:
           RAILS_ENV: test
           CODA_DOCS_API_KEY: pretend_api_key
         run: |
-          bundle exec rspec
+          bundle _2.5.23_ exec rspec
