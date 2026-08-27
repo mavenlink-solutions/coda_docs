@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Coda Docs Api Gem'
   spec.description   = 'Coda Docs Api Gem'
   spec.homepage      = 'https://github.com/joinmonday/coda_docs'
-  spec.required_ruby_version = '>= 3.2'
+  spec.required_ruby_version = '>= 3.1'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler' # , '~> 1.16'
+  spec.add_development_dependency 'bundler', '~> 2.5', '>= 2.5.23'
   spec.add_development_dependency 'dotenv', '~> 3.0'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'rake', '~> 13.0'
