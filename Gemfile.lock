@@ -118,7 +118,7 @@ DEPENDENCIES
   dotenv (~> 3.0)
   pry
   rake (~> 13.0)
-  rspec
+  rspec (~> 3.0)
   rubocop
   vcr
   webmock
