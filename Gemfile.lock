@@ -95,7 +95,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (= 2.5.23)
+  bundler (~> 2.5, >= 2.5.23)
   coda_docs!
   dotenv (~> 2.5)
   pry
