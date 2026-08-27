@@ -95,7 +95,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
+  bundler (~> 2.5, >= 2.5.23)
   coda_docs!
   dotenv (~> 2.5)
   pry
@@ -107,4 +107,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.2.33
+   2.5.23

@@ -2,6 +2,9 @@ name: Tests
 
 on: [pull_request]
 
+env:
+  BUNDLER_VERSION: 2.5.23
+
 jobs:
   rspec:
     runs-on: ubuntu-latest
@@ -23,11 +26,12 @@ jobs:
         env:
           RAILS_ENV: test
         run: |
-          bundle install
+          gem install bundler -v "$BUNDLER_VERSION"
+          bundle "_${BUNDLER_VERSION}_" install
           
       - name: Run tests
         env:
           RAILS_ENV: test
           CODA_DOCS_API_KEY: pretend_api_key
         run: |
-          bundle exec rspec
+          bundle "_${BUNDLER_VERSION}_" exec rspec
